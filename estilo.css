@@ -1,3 +1,6 @@
 body
   overflow hidden
   background: url("http://i.imgur.com/U5zsm8f.jpg") fixed no-repeat;
+  .cabecalho {font:normal bold 30px Arvo; color:#000000; margin:0px 0px 0px;}
+  .primeirosub {font:normal bold 18px Arvo; color:#000000; margin:0px 0px 0px;}
+  .segundosub {font:normal bold 15px Arvo; color:#000000; margin:0px 0px 0px;}
