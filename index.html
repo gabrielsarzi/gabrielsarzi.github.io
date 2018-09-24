@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
   <title>Gabriel Sarzi</title>
   
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
 </head>
-
 <body>
-   
-<!-- Cabeçalho -->
-   <p style='line-height: 1.5'><center><img src='http://i.imgur.com/51BLm52.png' style=' width: 300px; height: 300px;' vspace='0px'/>
-<!-- Fim Cabeçalho -->
-
-<!-- Subtitulo -->
-  <div class='primeirosub'><center><h3>Disponibilizarei aqui diversas ferramentas criadas durante meus momentos de ócio.</h3></center></div>
-  <div class='segundosub'><center><h4>Para me conhecer melhor, acesse meu site <a href="http://www.gabrielsarzi.com/">gabrielsarzi.com</a></h4></center></div>
-<!-- Fim Subtitulo -->
-     
-     <center><a href="https://gabrielsarzi.github.io/geradorLoremIpsum/" class="css_btn_class">Gerador de Lorem Ipsum</a></center>
-     <br><br><br>
-     <center><a href="https://github.com/gabrielsarzi/ExtensaoChromeTroca" class="css_btn_class">Extensão Google Chrome</a></center>
-     <center><h5>Extensão que troca siglas partidarias por sinonimos de ladrão. Conteudo humoristico!</h5></center>
-   
-   
+  
+ <div class="wrap">
+  <canvas id="nodes"></canvas><img id="me" src="http://i.imgur.com/51BLm52.png"/>
+  <div id="container">
+    <div id="social">
+      <div><a href="mailto:hello@yahiarefaiea.com" title="Entre em contato por e-mail">hello@gabrielsarzi.com</a></div>
+      <div><a href="http://yahiarefaiea.com/Yahia_Refaiea_Resume.pdf" title="PDF Resume">Download my Resume</a></div>
+      <div><a href="http://facebook.com/YahiaRefaiea" title="Facebook">Facebook</a></div>
+      <div><a href="http://facebook.com/YahiaRefaiea" title="LinkedIn">LinkedIn</a></div>
+    </div>
+  <!--  <div id="brief">
+      <div>A <span>21 years</span> old</div>
+      <div>interaction designer</div>
+    </div>-->
+  </div>
+</div>
+  
+  <!-- SCRIPTS ==================================================================-->    
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- particles.js container -->
+<div id="particles-js"></div> 
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script  src="scripts/index.js"></script>
+<!-- SCRIPTS ==================================================================-->
+ 
 </body>
 </html>
