@@ -185,45 +185,34 @@ body {
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid #e5e5e5;
-    width: 200px; /* Define tamanho fixo para ser quadrado */
-    height: 200px; /* Define tamanho fixo para ser quadrado */
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* Reduz padding para ajustar a imagem */
+    padding: 10px;
 }
 
 .client-placeholder:hover {
     background: #f0f0f0;
 }
 
-.client-placeholder i {
-    font-size: 2.5rem;
-    color: #cccccc;
-    margin-bottom: 15px;
-}
-
-.client-placeholder span {
-    color: #999999;
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
 .client-logo {
     width: 200px;
     height: 200px;
-    object-fit: contain; /* Mantém a proporção da imagem */
-    display: block;
-    transition: transform 0.3s ease; /* Adiciona transição suave para o efeito de hover */
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .client-placeholder a {
-    display: inline-block; /* Faz o link ocupar apenas o tamanho da imagem */
-    text-decoration: none; /* Remove sublinhado padrão do link */
+    display: inline-block; /* Limita o link ao tamanho da imagem */
+    text-decoration: none;
+    width: 100%; /* Garante que o link cubra a imagem */
+    height: 100%; /* Garante que o link cubra a imagem */
 }
 
 .client-placeholder a:hover .client-logo {
-    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+    transform: scale(1.05);
 }
 
 /* Contact Section */
@@ -250,6 +239,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-weight: 300;
+    text-decoration: none; /* Remove sublinhado inesperado */
 }
 
 .contact-buttons {
@@ -273,6 +263,7 @@ body {
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-decoration: none; /* Garante que o link não tenha sublinhado */
 }
 
 .whatsapp-button {
@@ -351,7 +342,7 @@ html {
     }
     
     .client-placeholder {
-        width: 150px; /* Ajusta para quadrado em telas menores */
+        width: 150px;
         height: 150px;
         padding: 10px;
     }
@@ -390,7 +381,7 @@ html {
     }
     
     .client-placeholder {
-        width: 120px; /* Ajusta para quadrado em telas pequenas */
+        width: 120px;
         height: 120px;
         padding: 10px;
     }
