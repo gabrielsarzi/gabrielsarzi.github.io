@@ -182,15 +182,15 @@ body {
 
 .client-placeholder {
     background: #fafafa;
-    padding: 60px 20px;
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid #e5e5e5;
-    min-height: 180px;
+    width: 200px; /* Define tamanho fixo para ser quadrado */
+    height: 200px; /* Define tamanho fixo para ser quadrado */
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px; /* Reduz padding para ajustar a imagem */
 }
 
 .client-placeholder:hover {
@@ -214,12 +214,11 @@ body {
     height: 200px;
     object-fit: contain; /* Mantém a proporção da imagem */
     display: block;
-    margin: 0 auto; /* Centraliza a imagem no contêiner */
     transition: transform 0.3s ease; /* Adiciona transição suave para o efeito de hover */
 }
 
 .client-placeholder a {
-    display: block; /* Garante que o link ocupe todo o espaço do contêiner */
+    display: inline-block; /* Faz o link ocupar apenas o tamanho da imagem */
     text-decoration: none; /* Remove sublinhado padrão do link */
 }
 
@@ -351,6 +350,12 @@ html {
         gap: 20px;
     }
     
+    .client-placeholder {
+        width: 150px; /* Ajusta para quadrado em telas menores */
+        height: 150px;
+        padding: 10px;
+    }
+    
     .client-logo {
         width: 150px;
         height: 150px;
@@ -385,8 +390,9 @@ html {
     }
     
     .client-placeholder {
-        padding: 40px 15px;
-        min-height: 150px;
+        width: 120px; /* Ajusta para quadrado em telas pequenas */
+        height: 120px;
+        padding: 10px;
     }
     
     .client-logo {
