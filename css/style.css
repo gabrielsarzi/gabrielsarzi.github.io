@@ -1,0 +1,369 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: #000000;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-container {
+    margin-bottom: 50px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.cta-button {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background: white;
+    color: #000000;
+}
+
+/* Services Section */
+.services {
+    padding: 120px 0;
+    background: #fafafa;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 80px;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.service-card {
+    background: white;
+    padding: 50px 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.service-card p {
+    color: #666666;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 120px 0;
+    background: white;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.portfolio-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.client-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.client-placeholder {
+    background: #fafafa;
+    padding: 60px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e5e5;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-placeholder:hover {
+    background: #f0f0f0;
+}
+
+.client-placeholder i {
+    font-size: 2.5rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.client-placeholder span {
+    color: #999999;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 120px 0;
+    background: #fafafa;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border: 2px solid #1a1a1a;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.whatsapp-button {
+    background: transparent;
+    color: #1a1a1a;
+}
+
+.whatsapp-button:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+.email-button {
+    background: #1a1a1a;
+    color: white;
+}
+
+.email-button:hover {
+    background: transparent;
+    color: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #cccccc;
+    font-weight: 300;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+        min-height: 80vh;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .logo {
+        max-width: 120px;
+    }
+    
+    .services h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+    
+    .services,
+    .portfolio,
+    .contact {
+        padding: 80px 0;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .client-logos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-buttons a {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .logo {
+        max-width: 100px;
+    }
+    
+    .service-card {
+        padding: 40px 30px;
+    }
+    
+    .client-placeholder {
+        padding: 40px 15px;
+        min-height: 150px;
+    }
+}
+
